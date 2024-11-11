@@ -6,7 +6,7 @@ body {
     background: #ffffff;
     font-family: 'Open Sans', sans-serif;
   }
-  
+
   h1,
   h2,
   h3,
@@ -15,20 +15,20 @@ body {
   h6 {
     color: #1d2434;
   }
-  
+
   a {
     color: #454545;
     transition: .3s;
   }
-  
+
   .form-control:focus {
     box-shadow: none;
   }
-  
+
   .container-fluid {
     max-width: 1366px;
   }
-  
+
   .back-to-top {
     position: fixed;
     display: none;
@@ -43,7 +43,7 @@ body {
     transition: background 0.5s;
     z-index: 9;
   }
-  
+
   /**********************************/
   /*********** Nav Bar CSS **********/
   /**********************************/
@@ -52,14 +52,14 @@ body {
     transition: .5s;
     z-index: 999;
   }
-  
+
   .navbar.nav-sticky {
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
   }
-  
+
   .navbar .navbar-brand {
     margin: 0;
     color: #ffffff;
@@ -67,16 +67,16 @@ body {
     line-height: 0px;
     font-weight: 600;
   }
-  
+
   .navbar .navbar-brand span {
     font-weight: 800;
   }
-  
+
   .navbar .navbar-brand img {
     max-width: 100%;
     max-height: 40px;
   }
-  
+
   .navbar-dark .navbar-nav .nav-link,
   .navbar-dark .navbar-nav .nav-link:focus,
   .navbar-dark .navbar-nav .nav-link:hover,
@@ -84,20 +84,20 @@ body {
     padding: 10px 10px 8px 10px;
     color: #ffffff;
   }
-  
+
   .navbar-dark .navbar-nav .nav-link:hover,
   .navbar-dark .navbar-nav .nav-link.active {
     background: rgba(256, 256, 256, .1);
     transition: none;
   }
-  
+
   .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
     border-radius: 0;
     background: #f8f9fa;
   }
-  
+
   @media (min-width: 992px) {
     .navbar {
       position: absolute;
@@ -106,12 +106,12 @@ body {
       background: rgba(0, 0, 0, .1) !important;
       z-index: 9;
     }
-  
+
     .navbar.nav-sticky {
       padding: 10px 60px;
       background: #1d2434 !important;
     }
-  
+
     .navbar a.nav-link {
       padding: 8px 15px;
       font-size: 14px;
@@ -119,23 +119,23 @@ body {
       text-transform: uppercase;
     }
   }
-  
+
   @media (max-width: 991.98px) {
     .navbar {
       padding: 15px;
       background: #1d2434 !important;
     }
-  
+
     .navbar a.nav-link {
       padding: 5px;
     }
-  
+
     .navbar .dropdown-menu {
       box-shadow: none;
     }
   }
-  
-  
+
+
   /*******************************/
   /********** Hero CSS ***********/
   /*******************************/
@@ -146,21 +146,21 @@ body {
     height: calc(100vh - 60px);
     background-image: linear-gradient(to bottom, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);  overflow: hidden;
   }
-  
+
   .hero .container-fluid {
     padding: 0;
   }
-  
+
   .hero .hero-image {
     position: relative;
     text-align: right;
   }
-  
+
   .hero .hero-image img {
     max-width: 80%;
     max-height: 80%;
   }
-  
+
   .hero .hero-text {
     position: relative;
     padding-left: 75px;
@@ -170,22 +170,22 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  
+
   .hero .hero-text h1 {
     color: #1d2434;
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
   }
-  
+
   .hero .hero-text p {
     color: #1d2434;
     font-size: 18px;
     margin-bottom: 25px;
   }
-  
-  
-  
+
+
+
   /*******************************/
   /********** About CSS **********/
   /*******************************/
@@ -195,18 +195,18 @@ body {
     padding: 45px 0;
     background-image: linear-gradient(to top, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);
   }
-  
+
   .about .section-header {
     margin-bottom: 30px;
     margin-left: 0;
   }
-  
+
   .about .about-img {
     position: relative;
     height: 100%;
     margin: 60px 0 0 60px;
   }
-  
+
   .about .about-img img {
     position: relative;
     width: 100%;
@@ -214,7 +214,7 @@ body {
     object-fit: cover;
     z-index: 1;
   }
-  
+
   .about .about-img::before {
     position: absolute;
     content: "";
@@ -225,7 +225,7 @@ body {
     background: #1d2434;
     z-index: 0;
   }
-  
+
   .about .about-img::after {
     position: absolute;
     content: "";
@@ -237,11 +237,11 @@ body {
     border: 1px solid #ffffff;
     z-index: 2;
   }
-  
+
   .about .about-text p {
     font-size: 16px;
   }
-  
+
   .about .about-text a.btn {
     position: relative;
     margin-top: 15px;
@@ -255,21 +255,21 @@ body {
     background: none;
     transition: .3s;
   }
-  
+
   .about .about-text a.btn:hover {
     color: #D5B981;
     background: #1d2434;
   }
-  
+
   @media (max-width: 767.98px) {
     .about .about-img {
       margin-bottom: 30px;
       height: auto;
     }
   }
-  
-  
-  
+
+
+
   /*******************************/
   /********* Service CSS *********/
   /*******************************/
@@ -278,25 +278,23 @@ body {
     width: 100%;
     padding: 45px 0 15px 0;
     background-image: linear-gradient(to bottom, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);  overflow: hidden;
-    position: relative;
-    width: 100%;
     text-align: center;
     margin-bottom: 0px;
-  
+
   }
-  
+
   .service .service-img {
     position: relative;
     width: 100%;
   }
-  
+
   .service .service-img img {
     position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
+
   .service .service-img::after {
     position: absolute;
     content: "";
@@ -308,20 +306,20 @@ body {
     border: 1px solid #ffffff;
     z-index: 1;
   }
-  
+
   .service .service-item h3 {
     margin: 0;
     padding: 25px 15px 15px 15px;
     font-size: 25px;
     font-weight: 700;
   }
-  
+
   .service .service-item p {
     margin: 0;
     padding: 0 25px 25px 25px;
     font-size: 16px;
   }
-  
+
   .service .service-item a.btn {
     position: relative;
     margin-bottom: 30px;
@@ -334,14 +332,14 @@ body {
     background: none;
     transition: .3s;
   }
-  
+
   .service .service-item:hover a.btn {
     color: #D5B981;
     background: #1d2434;
     border-color: #1d2434;
   }
-  
-  
+
+
   /*******************************/
   /********* Pricing CSS *********/
   /*******************************/
@@ -351,7 +349,7 @@ body {
     padding: 45px 0 15px 0;
     background-image: linear-gradient(to bottom, #bcc0b4, #c5d1cc, #d7e0e1, #eceff2, #ffffff);
   }
-  
+
   .price .price-item {
     position: relative;
     width: 100%;
@@ -363,20 +361,20 @@ body {
     background: rgba(29, 36, 52, .04);
     transition: .3s;
   }
-  
+
   .price .price-item:hover {
     background: #D5B981;
   }
-  
+
   .price .price-img {
     position: relative;
     width: 100px;
   }
-  
+
   .price .price-img img {
     width: 100%;
   }
-  
+
   .price .price-img::after {
     position: absolute;
     content: "";
@@ -388,14 +386,14 @@ body {
     border: 1px solid #ffffff;
     z-index: 1;
   }
-  
+
   .price .price-text {
     position: relative;
     padding: 0 15px;
     width: calc(100% - 100px);
     overflow: hidden;
   }
-  
+
   .price .price-text h2 {
     position: relative;
     margin-bottom: 8px;
@@ -403,7 +401,7 @@ body {
     font-weight: 600;
     white-space: nowrap;
   }
-  
+
   .price .price-text h3 {
     position: relative;
     margin: 0;
@@ -411,8 +409,8 @@ body {
     font-weight: 400;
     color: #333333;
   }
-  
-  
+
+
   /*******************************/
   /*********** Team CSS **********/
   /*******************************/
@@ -422,15 +420,15 @@ body {
     padding: 45px 0 15px 0;
     background-image: linear-gradient(to top, #1d2434, #505361, #888893, #c2c2c7, #ffffff);
   }
-  
+
   .team .team-item {
     margin-bottom: 30px;
   }
-  
+
   .team .team-img {
     position: relative;
   }
-  
+
   .team .team-img::after {
     position: absolute;
     content: "";
@@ -443,11 +441,11 @@ body {
     transition: .3s;
     z-index: 1;
   }
-  
+
   .team .team-img img {
     width: 100%;
   }
-  
+
   .team .team-text {
     position: relative;
     margin: -60px 15px 0 15px;
@@ -457,26 +455,26 @@ body {
     transition: .3s;
     z-index: 2;
   }
-  
+
   .team .team-text h2 {
     font-size: 16px;
     font-weight: 600;
   }
-  
+
   .team .team-text p {
     margin: 0;
     color: #333333;
   }
-  
+
   .team .team-item:hover .team-text {
     background: #D5B981;
   }
-  
+
   .team .team-item:hover .team-img::after {
     border-color: #D5B981;
   }
-  
-  
+
+
   /*******************************/
   /********* Footer CSS **********/
   /*******************************/
@@ -486,7 +484,7 @@ body {
     padding-top: 90px;
     background: #1d2434;
   }
-  
+
   .footer .footer-contact,
   .footer .footer-link,
   .footer .footer-newsletter {
@@ -494,7 +492,7 @@ body {
     margin-bottom: 45px;
     color: #999999;
   }
-  
+
   .footer .footer-contact h2,
   .footer .footer-link h2,
   .footer .footer-newsletter h2{
@@ -504,65 +502,64 @@ body {
     font-weight: 700;
     color: #D5B981;
   }
-  
+
   .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
     color: #999999;
     transition: .3s;
   }
-  
+
   .footer .footer-link a::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
   }
-  
+
   .footer .footer-link a:hover {
     color: #D5B981;
     letter-spacing: 1px;
   }
-  
+
   .footer .footer-contact p i {
     width: 25px;
   }
-  
+
   .footer .footer-social {
     position: relative;
     margin-top: 20px;
   }
-  
+
   .footer .footer-social a {
     display: inline-block;
   }
-  
+
   .footer .footer-social a i {
     margin-right: 15px;
     font-size: 18px;
     color: #D5B981;
   }
-  
+
   .footer .footer-social a:last-child i {
     margin: 0;
   }
-  
+
   .footer .footer-social a:hover i {
     color: #999999;
   }
-  
+
   .footer .footer-newsletter .form {
     position: relative;
     width: 100%;
   }
-  
+
   .footer .footer-newsletter input {
     height: 60px;
     border: 2px solid #1d2434;
     border-radius: 0;
   }
-  
+
   .footer .footer-newsletter .btn {
     position: absolute;
     top: 8px;
@@ -577,40 +574,40 @@ body {
     border: 2px solid #1d2434;
     transition: .3s;
   }
-  
+
   .footer .footer-newsletter .btn:hover {
     color: #D5B981;
     background: #1d2434;
   }
-  
+
   .footer .copyright {
     padding: 0 30px;
   }
-  
+
   .footer .copyright .row {
     background: #ffffff;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  
+
   .footer .copyright p {
     margin: 0;
     color: #454545;
   }
-  
+
   .footer .copyright .col-md-6:last-child p {
     text-align: right;
   }
-  
+
   .footer .copyright p a {
     color: #1d2434;
     font-weight: 700;
   }
-  
+
   .footer .copyright p a:hover {
     color: #D5B981;
   }
-  
+
   @media (max-width: 767.98px) {
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
@@ -618,4 +615,3 @@ body {
       text-align: center;
     }
   }
-  
