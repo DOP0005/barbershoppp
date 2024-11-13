@@ -1,4 +1,39 @@
 /*******************************/
+/********* General CSS *********/
+/*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1d2434;
+}
+
+a {
+  color: #454545;
+  transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #D5B981;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+  box-shadow: none;
+}
+
+.container-fluid {
+  max-width: 1366px;
+}
+
+/*******************************/
 /********** Hero CSS ***********/
 /*******************************/
 .hero {
@@ -6,7 +41,7 @@
   width: 100%;
   margin-bottom: 0px;
   height: calc(100vh - 60px);
-  background-image: linear-gradient(to bottom, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);  overflow: hidden;
+  /*background-image: linear-gradient(to bottom, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);  overflow: hidden;*/
 }
 
 .hero .container-fluid {
@@ -35,7 +70,7 @@
 
 .hero .hero-text h1 {
   color: #1d2434;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -55,7 +90,7 @@
   position: relative;
   width: 100%;
   padding: 45px 0;
-  background-image: linear-gradient(to top, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);
+  /*background-image: linear-gradient(to top, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);*/
 }
 
 .about .section-header {
@@ -139,7 +174,7 @@
   position: relative;
   width: 100%;
   padding: 45px 0 15px 0;
-  background-image: linear-gradient(to bottom, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);  overflow: hidden;
+  /*background-image: linear-gradient(to bottom, #525558, #676f71, #7f8a89, #9ba59e, #bcc0b4);  overflow: hidden;*/
   text-align: center;
   margin-bottom: 0px;
 
@@ -209,7 +244,7 @@
   position: relative;
   width: 100%;
   padding: 45px 0 15px 0;
-  background-image: linear-gradient(to bottom, #bcc0b4, #c5d1cc, #d7e0e1, #eceff2, #ffffff);
+  /*background-image: linear-gradient(to bottom, #bcc0b4, #c5d1cc, #d7e0e1, #eceff2, #ffffff);*/
 }
 
 .price .price-item {
@@ -280,7 +315,7 @@
   position: relative;
   width: 100%;
   padding: 45px 0 15px 0;
-  background-image: linear-gradient(to top, #1d2434, #505361, #888893, #c2c2c7, #ffffff);
+  /*background-image: linear-gradient(to top, #1d2434, #505361, #888893, #c2c2c7, #ffffff);*/
 }
 
 .team .team-item {
