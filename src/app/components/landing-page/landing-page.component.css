@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+h1, h2, h3 {
+  font-family: "Quantum";
+}
 
 @keyframes scroll {
   0% {
@@ -14,8 +17,6 @@
   animation: scroll 200s linear infinite;
   width: max-content;
 }
-
-
 
 h1,
 h2,
