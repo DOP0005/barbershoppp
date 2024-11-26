@@ -6,6 +6,6 @@ app-root {
   font-family: 'Open Sans', sans-serif;
 }
 @font-face {
-  font-family: 'Quantum';
-  src: url('./assets/font/Quantum.otf');
+  font-family: 'Star Jedi';
+  src: url('./assets/font/starjedi/Starjedi.ttf');
 }
