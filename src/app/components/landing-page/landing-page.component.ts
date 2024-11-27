@@ -1,12 +1,9 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import {NgClass} from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [
-    NgClass
-  ],
+  imports: [],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
@@ -18,6 +15,12 @@ export class LandingPageComponent {
     {id:4, url: 'assets/img/image00004.jpeg', alt: 'Image 4'},
     {id:5, url: 'assets/img/image00005.jpeg', alt: 'Image 5'},
     {id:6, url: 'assets/img/image00006.jpeg', alt: 'Image 6'},
+    {id:7, url: 'assets/img/image00007.jpeg', alt: 'Image 7'},
+    {id:8, url: 'assets/img/image00008.jpeg', alt: 'Image 8'},
+    {id:9, url: 'assets/img/image00009.jpeg', alt: 'Image 9'},
+    {id:10, url: 'assets/img/image00010.jpeg', alt: 'Image 10'},
+    {id:11, url: 'assets/img/image00011.jpeg', alt: 'Image 11'},
+    {id:12, url: 'assets/img/image00012.jpeg', alt: 'Image 12'},
     {id:13, url: 'assets/img/image00013.jpeg', alt: 'Image 13'},
     {id:14, url: 'assets/img/image00014.jpeg', alt: 'Image 14'},
     {id:15, url: 'assets/img/image00015.jpeg', alt: 'Image 15'},
@@ -29,20 +32,5 @@ export class LandingPageComponent {
     {id:21, url: 'assets/img/image00021.jpeg', alt: 'Image 21'},
     {id:22, url: 'assets/img/image00022.jpeg', alt: 'Image 22'},
   ];
-
-  currentIndex: number = 0; // Índice de la primera imagen que se muestra
-
-  get displayedImages() {
-    // Devuelve un array de las imágenes que se deben mostrar según el índice actual
-    return this.images.slice(this.currentIndex, this.currentIndex + 6);
-  }
-
-  moveLeft() {
-    this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 6 : 0; // Mueve a la izquierda
-  }
-
-  moveRight() {
-    this.currentIndex = (this.currentIndex < this.images.length - 6) ? this.currentIndex + 6 : this.images.length - 6; // Mueve a la derecha
-  }
 
 }

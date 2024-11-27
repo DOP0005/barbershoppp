@@ -158,32 +158,22 @@
 </div>
 <!-- Pricing End -->
 
+<!-- Galeria Start -->
 <div class="py-16 bg-gray-900 overflow-hidden">
   <div class="container mx-auto">
     <div class="text-center mb-12">
-      <h2 class="text-5xl font-thin text-white">Galería</h2>
+      <h2 class="text-5xl font-bold text-white">Galería</h2>
       <h3 class="text-lg text-white mt-4">Explora Nuestro Espacio</h3>
     </div>
-    <div class="relative flex items-center">
-
-      <!-- Botón Izquierdo -->
-      <button (click)="moveLeft()" class="absolute left-0 bg-white text-black p-2 rounded" [disabled]="currentIndex === 0">
-        &#9664; <!-- Flecha izquierda -->
-      </button>
-
-      <!-- Contenedor de Imágenes -->
-      <div class="grid grid-cols-3 gap-4">
-<!--        *ngFor="let image of displayedImages"-->
-        @for (image of displayedImages; track image.id){
-        <div  class="image-item w-full h-64 overflow-hidden rounded-lg shadow-lg">
-          <img class="w-full h-full object-cover" [src]="image.url" [alt]="image.alt" />
-        </div>}
+    <div class="relative">
+      <!-- Carrusel -->
+      <div id="carousell" class="flex gap-6 grid-rows-2 animate-scroll">
+        @for (image of images; track image.id) {
+          <div class="image-item flex-none w-80 h-64 overflow-hidden rounded-lg shadow-lg">
+            <img class="w-full h-full object-cover" [src]="image.url" [alt]="image.alt"/>
+          </div>
+        }
       </div>
-
-      <!-- Botón Derecho -->
-      <button (click)="moveRight()" class="absolute right-0 bg-white text-black p-2 rounded" [disabled]="currentIndex >= images.length - 6">
-        &#9654; <!-- Flecha derecha -->
-      </button>
     </div>
   </div>
 </div>

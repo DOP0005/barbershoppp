@@ -5,8 +5,17 @@ h1, h2, h3, h4 {
   font-family: "Star Jedi";
 }
 
-.image-item {
-  transition: transform 1.0s ease; /* Suaviza el efecto de transición si es necesario */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-scroll {
+  animation: scroll 200s linear infinite;
+  width: max-content;
 }
 
 
