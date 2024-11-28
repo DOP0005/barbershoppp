@@ -1,7 +1,6 @@
 .footer {
   position: relative;
   margin-top: 0;
-  padding-top: 90px;
   background: #1d2434;
 }
 
@@ -67,65 +66,6 @@
 
 .footer .footer-social a:hover i {
   color: #999999;
-}
-
-.footer .footer-newsletter .form {
-  position: relative;
-  width: 100%;
-}
-
-.footer .footer-newsletter input {
-  height: 60px;
-  border: 2px solid #1d2434;
-  border-radius: 0;
-}
-
-.footer .footer-newsletter .btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  height: 44px;
-  padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #1d2434;
-  background: none;
-  border-radius: 0;
-  border: 2px solid #1d2434;
-  transition: .3s;
-}
-
-.footer .footer-newsletter .btn:hover {
-  color: #D5B981;
-  background: #1d2434;
-}
-
-.footer .copyright {
-  padding: 0 30px;
-}
-
-.footer .copyright .row {
-  background: #ffffff;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.footer .copyright p {
-  margin: 0;
-  color: #454545;
-}
-
-.footer .copyright .col-md-6:last-child p {
-  text-align: right;
-}
-
-.footer .copyright p a {
-  color: #1d2434;
-  font-weight: 700;
-}
-
-.footer .copyright p a:hover {
-  color: #D5B981;
 }
 
 @media (max-width: 767.98px) {
