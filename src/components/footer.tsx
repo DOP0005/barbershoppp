@@ -3,16 +3,20 @@ const mapUrl =
 
 export function Footer() {
   return (
-    <div className="footer">
-      <div className="row w-full p-4">
-        <div className="col-sm-6 col-md-6 w-full">
-          <div className="footer-contact w-full pt-2.5">
-            <h2>DIRECCIÓN</h2>
+    <footer className="youth-footer">
+      <div className="youth-footer__grid">
+        <div className="youth-footer__content">
+          <div>
+            <img
+              src="/assets/img/logo2.png"
+              alt="Nitido"
+              className="youth-footer__logo"
+            />
+            <h2>Tu próximo corte empieza acá.</h2>
             <p>
-              <i className="fa fa-map-marker-alt"></i>Avenida de la Libertad,
-              64 Leganés (La Fortuna) 28917
+              Avenida de la Libertad, 64 · Leganés (La Fortuna) 28917
             </p>
-            <div className="footer-social">
+            <div className="youth-footer__social">
               <a href="https://www.instagram.com/nitido.barberstudio">
                 <i className="fab fa-instagram"></i>
               </a>
@@ -25,19 +29,16 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="col-sm-6 col-md-6 w-full p-0">
         <iframe
           src={mapUrl}
-          className="w-full"
-          height="300"
+          className="youth-footer__map"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Ubicación de NITIDO Barber Studio"
         />
-        </div>
       </div>
-    </div>
+    </footer>
   );
 }

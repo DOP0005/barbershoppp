@@ -27,177 +27,156 @@ const bookingUrl =
 export function LandingPage() {
   return (
     <>
-      <div className="hero w-full h-screen flex">
-        <div className="container-fluid m-0 px-0 flex flex-row h-full">
-          <div className="col-sm-6 col-md-6 flex flex-col justify-center items-center p-0 m-auto ">
+      <div className="youth-page">
+      <section className="youth-hero">
+        <div className="youth-hero__content">
+          <div className="youth-hero__copy">
             <a
               href="https://www.instagram.com/nitido.barberstudio"
               target="_blank"
               rel="noopener noreferrer"
+              className="youth-hero__logo-link"
             >
-              <div className="m-auto p-0">
-                <img
-                  className="max-w-full max-h-full  rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-                  src="/assets/img/logo2.png"
-                  alt="Nitido"
-                />
-              </div>
+              <img
+                className="youth-hero__logo"
+                src="/assets/img/logo2.png"
+                alt="Nitido"
+              />
             </a>
 
-            <div className="hero-text text-center p-4 ">
-              <p className="text-gray-800 text-lg md:text-xl font-light leading-relaxed">
-                Tu imagen, Nuestra pasión. En NITIDO cada detalle está pensado
-                para ti. ¡Ven y disfruta de un servicio de calidad donde la
-                precisión y el buen gusto se encuentra!
-              </p>
-            </div>
+            <h1 className="youth-hero__title">Tu corte. Tu actitud.</h1>
+            <p className="youth-hero__text">
+              Tu imagen, Nuestra pasión. En NITIDO cada detalle está pensado
+              para ti. ¡Ven y disfruta de un servicio de calidad donde la
+              precisión y el buen gusto se encuentra!
+            </p>
 
-            <div className="m-auto p-2 w-full max-w-52 bg-gray-200 bg-opacity-75 text-gray-800 rounded-lg shadow-lg transition duration-300 hover:bg-black hover:text-white">
+            <div className="youth-hero__actions">
               <a
                 href={bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block no-underline text-lg md:text-xl hover:font-light leading-relaxed text-center"
+                className="youth-button youth-button--primary"
               >
-                <span>Reservar</span>
+                Reservar
               </a>
-            </div>
-
-            <div className="mt-1.5 p-2 w-full max-w-52 bg-gray-200 bg-opacity-75 text-gray-800 rounded-lg shadow-lg transition duration-300 hover:bg-black hover:text-white">
               <a
                 href="#servicios"
                 rel="noopener noreferrer"
-                className="no-underline block text-lg md:text-xl hover:font-light leading-relaxed text-center"
+                className="youth-button youth-button--ghost"
               >
-                <span>Ver los servicios</span>
+                Ver servicios
               </a>
             </div>
           </div>
 
           <div
-            className="col-sm-6 col-md-6 p-0 bg-cover bg-center"
+            className="youth-hero__image"
             style={{ backgroundImage: "url('/assets/img/image00001.jpeg')" }}
-          />
+          >
+            <div className="youth-hero__image-glow" />
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="team bg-gray-100">
-        <div className="container mx-auto py-16">
-          <div className="section-header text-center mb-12">
-            <h2 className="text-5xl font-bold font-bold text-black">
-              CONOZCA A NUESTRO BARBERO
-            </h2>
+      <section className="youth-section youth-section--light">
+        <div className="youth-container">
+          <div className="youth-section__header">
+            <h2>CONOZCA A NUESTRO BARBERO</h2>
+            <p>
+              Estilo limpio, técnica precisa y una experiencia pensada para que
+              salgas con flow propio.
+            </p>
           </div>
 
-          <div className="text-center p-4">
-            <p className="text-gray-800 text-lg md:text-xl font-light leading-relaxed">
+          <div className="youth-intro">
+            <p>
               En NITIDO, nos especializamos en resaltar lo mejor de tu estilo
               con precisión y detalle. Ya sea que busques un corte clásico,
               moderno o algo único, nuestro equipo está listo para ofrecerte un
               servicio impecable en un ambiente relajado y cómodo. Cada visita a
               nuestra barbería es una experiencia pensada para ti, porque
               sabemos que un buen corte no es solo una cuestión de apariencia,
-              es una declaración de personalidad.{' '}
+              es una declaración de personalidad.
             </p>
           </div>
 
-          <div className="flex flex-nowrap justify-center gap-10">
-            <div className="team-item bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="youth-barber-wrap">
+            <div className="youth-barber-card">
               <a
                 href="https://www.instagram.com/blaskkoo"
-                className="no-underline"
+                className="youth-barber-card__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="team-img">
+                <div className="youth-barber-card__image">
                   <img
-                    className="w-80 h-80 object-cover transition duration-300 transform hover:scale-110 hover:opacity-90"
                     src="/assets/img/blasko.jpeg"
                     alt="Team Image"
                   />
                 </div>
-                <div className="team-text text-center p-6">
-                  <p
-                    className="text-3xl font-bold text-gray-800"
-                    style={{ fontFamily: 'NewYork' }}
-                  >
-                    BLASKO
-                  </p>
+                <div className="youth-barber-card__body">
+                  <p>BLASKO</p>
+                  <span>@blaskkoo</span>
                 </div>
               </a>
             </div>
           </div>
         </div>
+      </section>
 
-        <div
+      <section
           id="servicios"
-          className="py-16 bg-gray-900 bg-cover bg-center"
+          className="youth-services"
           style={{ backgroundImage: "url('/assets/img/image00016.jpeg')" }}
         >
-          <div className="container mx-auto">
-            <div className="text-center mb-12">
-              <h1
-                className="text-5xl font-bold text-white"
-                style={{ fontFamily: 'NewYork' }}
-              >
-                SERVICIOS
-              </h1>
+          <div className="youth-services__overlay">
+          <div className="youth-container">
+            <div className="youth-section__header youth-section__header--dark">
+              <h2>SERVICIOS</h2>
+              <p>Cortes, barba y color con acabado fresco.</p>
             </div>
 
-            <div className="flex flex-wrap lg:flex-nowrap justify-center">
-              <div className="w-full lg:w-2/3 mb-8 lg:mb-0 bg-gray-700 bg-opacity-60 rounded-2xl m-6">
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+            <div className="youth-price-panel">
+                <ul className="youth-price-grid">
                   {services.map(([name, time]) => (
                     <li key={name}>
-                      <p className="text-xl font-semibold text-white">
-                        {name}
-                      </p>
-                      <p className="text-sm text-white">{time}</p>
+                      <p>{name}</p>
+                      <span>{time}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
             </div>
 
-            <div className="m-auto mt-4 p-2 w-full max-w-52 bg-gray-200 bg-opacity-40 text-black font-semibold rounded-lg shadow-lg transition duration-300 hover:bg-black ">
+            <div className="youth-services__cta">
               <a
                 href={bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block no-underline text-lg md:text-xl hover:font-dark leading-relaxed text-center"
+                className="youth-button youth-button--primary"
               >
-                <span>RESERVAR</span>
+                RESERVAR
               </a>
             </div>
           </div>
-        </div>
+          </div>
+        </section>
 
-        <div className="py-16 bg-gray-900 overflow-hidden">
-          <div className="container mx-auto">
-            <div className="text-center mb-12">
-              <h2
-                className="text-5xl font-bold text-white"
-                style={{ fontFamily: 'NewYork' }}
-              >
-                GALERIA
-              </h2>
-              <h3
-                className="text-3xl font-bold text-white mt-4"
-                style={{ fontFamily: 'NewYork' }}
-              >
-                EXPLORA NUESTRO ESPACIO
-              </h3>
+        <section className="youth-gallery">
+          <div className="youth-container">
+            <div className="youth-section__header youth-section__header--dark">
+              <h2>GALERIA</h2>
+              <p>EXPLORA NUESTRO ESPACIO</p>
             </div>
 
-            <div className="relative">
-              <div id="carousell" className="flex gap-6 grid-rows-2 animate-scroll">
+            <div className="youth-gallery__rail">
+              <div id="carousell" className="youth-gallery__track animate-scroll">
                 {galleryImages.map((image) => (
                   <div
-                    className="image-item flex-none w-80 h-64 overflow-hidden rounded-lg shadow-lg"
+                    className="youth-gallery__item"
                     key={image.id}
                   >
                     <img
-                      className="w-full h-full object-cover"
                       src={image.url}
                       alt={image.alt}
                     />
@@ -206,7 +185,7 @@ export function LandingPage() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );
