@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body,
 app-root {
   font-family: 'Open Sans', sans-serif;
 }
@@ -11,5 +12,5 @@ app-root {
 } */
 @font-face {
   font-family: 'NewYork';
-  src: url('./assets/font/NewYork\ PERSONAL\ USE.otf');
+  src: url('/assets/font/NewYork%20PERSONAL%20USE.otf');
 }
