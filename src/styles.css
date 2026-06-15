@@ -5,6 +5,15 @@
 app-root {
   font-family: 'Open Sans', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0a !important;
+}
 /* @font-face {
   font-family: 'Star Jedi';
   src: url('./assets/font/starjedi/Starjedi.ttf');

@@ -1,77 +1,64 @@
 .footer {
-  position: relative;
-  margin-top: 0;
-  background: #1d2434;
+  display: grid;
+  grid-template-columns: 160px 1fr 60px;
+  align-items: center;
+  gap: 30px;
+  padding: 34px clamp(22px, 5vw, 80px) 24px;
+  background: #0a0a0a;
+  color: #fff;
 }
 
-.footer .footer-contact,
-.footer .footer-link,
-.footer .footer-newsletter {
-  position: relative;
-  margin-bottom: 45px;
-  color: #999999;
+.footer-brand img {
+  width: 110px;
+  height: 54px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
-.footer .footer-contact h2,
-.footer .footer-link h2,
-.footer .footer-newsletter h2{
-  position: relative;
-  margin-bottom: 30px;
-  font-size: 22px;
-  font-weight: 700;
-  color: #D5B981;
+.footer nav {
+  display: flex;
+  justify-content: center;
+  gap: clamp(18px, 3vw, 42px);
 }
 
-.footer .footer-link a {
-  display: block;
-  margin-bottom: 10px;
-  color: #999999;
-  transition: .3s;
+.footer nav a {
+  color: rgba(255, 255, 255, .75);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-decoration: none;
 }
 
-.footer .footer-link a::before {
-  position: relative;
-  content: "\f105";
-  font-weight: 900;
-  margin-right: 10px;
+.footer nav a:hover,
+.footer nav a:focus-visible {
+  color: #d5a95f;
 }
 
-.footer .footer-link a:hover {
-  color: #D5B981;
-  letter-spacing: 1px;
+.footer-instagram {
+  color: #d5a95f;
+  font-size: 1.55rem;
+  text-align: right;
 }
 
-.footer .footer-contact p i {
-  width: 25px;
+.footer > p {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  padding-top: 20px;
+  color: rgba(255, 255, 255, .45);
+  font-size: .7rem;
+  text-align: center;
 }
 
-.footer .footer-social {
-  position: relative;
-  margin-top: 20px;
-}
+@media (max-width: 720px) {
+  .footer {
+    grid-template-columns: 1fr auto;
+  }
 
-.footer .footer-social a {
-  display: inline-block;
-}
-
-.footer .footer-social a i {
-  margin-right: 15px;
-  font-size: 18px;
-  color: #D5B981;
-}
-
-.footer .footer-social a:last-child i {
-  margin: 0;
-}
-
-.footer .footer-social a:hover i {
-  color: #999999;
-}
-
-@media (max-width: 767.98px) {
-  .footer .copyright p,
-  .footer .copyright .col-md-6:last-child p {
-    margin: 5px 0;
-    text-align: center;
+  .footer nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }

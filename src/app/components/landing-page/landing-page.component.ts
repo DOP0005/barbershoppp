@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './landing-page.component.css'
 })
 export class LandingPageComponent {
+  menuOpen = false;
+
   images = [
     {id:1, url: 'assets/img/image00001.jpeg', alt: 'Image 1'},
     {id:2, url: 'assets/img/image00002.jpeg', alt: 'Image 2'},
@@ -33,4 +35,11 @@ export class LandingPageComponent {
     {id:22, url: 'assets/img/image00022.jpeg', alt: 'Image 22'},
   ];
 
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
 }

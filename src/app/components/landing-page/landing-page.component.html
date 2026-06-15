@@ -1,177 +1,186 @@
-<!-- Hero Start -->
-<div class="hero w-full h-screen flex">
-  <div class="container-fluid m-0 px-0 flex flex-row h-full">
-    <div class="col-sm-6 col-md-6 flex flex-col justify-center items-center p-0 m-auto ">
-      <a href="https://www.instagram.com/nitido.barberstudio" target="_blank" rel="noopener noreferrer">
-        <div class="m-auto p-0">
-          <img
-            class="max-w-full max-h-full  rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-            src="assets/img/logo2.png" alt="Nitido">
+<main class="landing">
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Nítido Barber Studio">
+      <img src="assets/img/logo2.png" alt="Nítido Barber Studio">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" [attr.aria-expanded]="menuOpen"
+      (click)="toggleMenu()">
+      <i class="fa-solid" [class.fa-bars]="!menuOpen" [class.fa-xmark]="menuOpen"></i>
+    </button>
+
+    <nav class="main-nav" [class.main-nav--open]="menuOpen" aria-label="Navegación principal">
+      <a href="#inicio" (click)="closeMenu()">INICIO</a>
+      <a href="#equipo" (click)="closeMenu()">EQUIPO</a>
+      <a href="#servicios" (click)="closeMenu()">SERVICIOS</a>
+      <a href="#galeria" (click)="closeMenu()">GALERÍA</a>
+      <a href="#contacto" (click)="closeMenu()">CONTACTO</a>
+    </nav>
+
+    <a class="header-booking" href="https://booksy.com/es-es/124137_nitido-barber-studio_barber-shop_101746_zaragoza"
+      target="_blank" rel="noopener noreferrer">
+      RESERVAR CITA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </header>
+
+  <section id="inicio" class="hero-section">
+    <img class="hero-image" src="assets/img/image00016.jpeg" alt="Interior de Nítido Barber Studio">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="hero-studio">BARBER STUDIO</p>
+      <h1>NÍTIDO</h1>
+      <p class="hero-claim">ESTILO. PRECISIÓN. ACTITUD.</p>
+      <p class="hero-copy">Tu imagen habla antes que vos. Nosotros hacemos que diga exactamente lo que querés.</p>
+      <div class="hero-actions">
+        <a class="button button--gold"
+          href="https://booksy.com/es-es/124137_nitido-barber-studio_barber-shop_101746_zaragoza" target="_blank"
+          rel="noopener noreferrer">
+          RESERVAR CITA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="text-link" href="#servicios">VER SERVICIOS <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </div>
+    <a class="hero-instagram" href="https://www.instagram.com/nitido.barberstudio" target="_blank"
+      rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i> &#64;nitido.barberstudio
+    </a>
+  </section>
+
+  <section id="equipo" class="team-section section">
+    <div class="section-intro">
+      <p class="section-label">EQUIPO</p>
+      <h2>PASIÓN POR<br>LOS DETALLES</h2>
+      <p>Dos estilos, una misma visión: que salgas mejor de lo que entraste.</p>
+    </div>
+
+    <div class="barbers">
+      <a class="barber" href="https://www.instagram.com/blaskkoo" target="_blank" rel="noopener noreferrer">
+        <div class="barber-image">
+          <img src="assets/img/blaskoNew.jpeg" alt="Blasko trabajando">
+        </div>
+        <div class="barber-info">
+          <div>
+            <h3>BLASKO</h3>
+            <p><i class="fa-brands fa-instagram"></i> &#64;blaskkoo</p>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </a>
-      <div class="hero-text text-center p-4 ">
-        <p class="text-gray-800 text-lg md:text-xl font-light leading-relaxed">
-          Tu imagen, Nuestra pasión.
-          En NITIDO cada detalle está pensado para ti. ¡Ven y disfruta de un servicio de calidad donde la precisión y el
-          buen gusto se encuentra!
-        </p>
-      </div>
-      <div
-        class="m-auto p-2 w-full max-w-52 bg-gray-200 bg-opacity-75 text-gray-800 rounded-lg shadow-lg transition duration-300 hover:bg-black hover:text-white">
-        <a href="https://booksy.com/es-es/124137_nitido-barber-studio_barber-shop_101746_zaragoza" target="_blank"
-          rel="noopener noreferrer"
-          class="block no-underline text-lg md:text-xl hover:font-light leading-relaxed text-center">
-          <span>Reservar</span>
-        </a>
-      </div>
-      <div
-        class="mt-1.5 p-2 w-full max-w-52 bg-gray-200 bg-opacity-75 text-gray-800 rounded-lg shadow-lg transition duration-300 hover:bg-black hover:text-white">
-        <a href="#servicios" rel="noopener noreferrer"
-          class="no-underline block text-lg md:text-xl hover:font-light leading-relaxed text-center">
-          <span>Ver los servicios</span>
-        </a>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-6 p-0 bg-cover bg-center" style="background-image: url(assets/img/image00001.jpeg)">
-    </div>
-  </div>
-</div>
-<!-- Hero End -->
 
-
-<!-- Team Start -->
-<div class="team bg-gray-100">
-  <div class="container mx-auto py-16">
-    <div class="section-header text-center mb-12">
-      <h2 class="text-5xl font-bold font-bold text-black">CONOZCA A NUESTRO BARBERO</h2>
-    </div>
-    <div class="text-center p-4">
-      <p class="text-gray-800 text-lg md:text-xl font-light leading-relaxed">
-        En NITIDO, nos especializamos en resaltar lo mejor de tu estilo con precisión y detalle. Ya sea que busques un
-        corte clásico, moderno o algo único, nuestro equipo está listo para ofrecerte un servicio impecable en un
-        ambiente relajado y cómodo. Cada visita a nuestra barbería es una experiencia pensada para ti, porque sabemos
-        que un buen corte no es solo una cuestión de apariencia, es una declaración de personalidad. </p>
-    </div>
-    <!-- barberos -->
-    <!-- Blasko -->
-    <div class="flex flex-nowrap justify-center gap-10">
-      <!-- <div class="col-lg-8 col-md-8 flex justify-center"> -->
-      <div
-        class="team-item bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-        <a href="https://www.instagram.com/blaskkoo" class="no-underline" target="_blank" rel="noopener noreferrer">
-          <div class="team-img">
-            <img class="w-80 h-80 object-cover transition duration-300 transform hover:scale-110 hover:opacity-90"
-              src="assets/img/blasko.jpeg" alt="Team Image">
-          </div>
-          <div class="team-text text-center p-6">
-            <p class="text-3xl font-bold text-gray-800" style="font-family: 'NewYork'">BLASKO</p>
-          </div>
-        </a>
-      </div>
-      <!-- <div
-        class="team-item bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-        <a href="https://www.instagram.com/vidi.barber" class="no-underline" target="_blank" rel="noopener noreferrer">
-          <div class="team-img">
-            <img class="w-80 h-80 object-cover transition duration-300 transform hover:scale-110 hover:opacity-90"
-              src="assets/img/vidi-barber.jpeg" alt="Team Image">
-          </div>
-          <div class="team-text text-center p-6">
-            <p class="text-3xl font-bold text-gray-800" style="font-family: 'NewYork'">VIDI</p>
-          </div>
-        </a>
-      </div> -->
-      <!-- </div> -->
-    </div>
-  </div>
-  <!-- Team End -->
-
-  <!-- Pricing Start -->
-  <div id="servicios" class="py-16 bg-gray-900 bg-cover bg-center"
-    style="background-image: url(assets/img/image00016.jpeg)">
-    <div class="container mx-auto">
-      <div class="text-center mb-12">
-        <h1 class="text-5xl font-bold text-white" style="font-family: 'NewYork'">SERVICIOS</h1>
-      </div>
-      <div class="flex flex-wrap lg:flex-nowrap justify-center">
-        <!-- Precios Corte -->
-        <div class="w-full lg:w-2/3 mb-8 lg:mb-0 bg-gray-700 bg-opacity-60 rounded-2xl m-6">
-          <!-- <h4 class="text-white text-3xl font-bold m-7" style="font-family: 'NewYork'">PRECIOS CORTE</h4> -->
-          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE MODERNO 12€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 35 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE Y CEJAS 14€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 35 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE Y BARBA 17€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 45 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE Y LAVADO 15€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 35 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE, BARBA Y CEJAS 19€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 45 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE, BARBA, CEJAS Y LAVADO 22€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 60 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE PREMIUM 15€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 45 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">CORTE NIÑO O JUBILADO 7€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 20 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">ARREGLO DE BARBA 8€</p>
-              <p class="text-sm text-white">(TIEMPO APROX. 15 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">MECHAS 35€</p>
-              <p class="text-sm text-white">(INCLUYE CORTE. TIEMPO APROX. 150 MIN)</p>
-            </li>
-            <li>
-              <p class="text-xl font-semibold text-white">DECOLORACIÓN 55€</p>
-              <p class="text-sm text-white">(INCLUYE CORTE. TIEMPO APROX. 180MIN)</p>
-            </li>
-          </ul>
+      <a class="barber" href="https://www.instagram.com/cuba.barberr" target="_blank"
+        rel="noopener noreferrer">
+        <div class="barber-image">
+          <img src="assets/img/perfilCuba.jpeg" alt="Cuba trabajando">
         </div>
-      </div>
-      <div
-        class="m-auto mt-4 p-2 w-full max-w-52 bg-gray-200 bg-opacity-40 text-black font-semibold rounded-lg shadow-lg transition duration-300 hover:bg-black ">
-        <a href="https://booksy.com/es-es/124137_nitido-barber-studio_barber-shop_101746_zaragoza" target="_blank"
-          rel="noopener noreferrer"
-          class="block no-underline text-lg md:text-xl hover:font-dark leading-relaxed text-center">
-          <span>RESERVAR</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- Pricing End -->
-
-  <!-- Galeria Start -->
-  <div class="py-16 bg-gray-900 overflow-hidden">
-    <div class="container mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-5xl font-bold text-white" style="font-family: 'NewYork'">GALERIA</h2>
-        <h3 class="text-3xl font-bold text-white mt-4" style="font-family: 'NewYork'">EXPLORA NUESTRO ESPACIO</h3>
-      </div>
-      <div class="relative">
-        <!-- Carrusel -->
-        <div id="carousell" class="flex gap-6 grid-rows-2 animate-scroll">
-          @for (image of images; track image.id) {
-          <div class="image-item flex-none w-80 h-64 overflow-hidden rounded-lg shadow-lg">
-            <img class="w-full h-full object-cover" [src]="image.url" [alt]="image.alt" />
+        <div class="barber-info">
+          <div>
+            <h3>CUBA</h3>
+            <p><i class="fa-brands fa-instagram"></i> &#64;cuba.barberr</p>
           </div>
-          }
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
-      </div>
+      </a>
     </div>
-  </div>
+  </section>
+
+  <section id="servicios" class="services-section section section--dark">
+    <div class="section-heading">
+      <p class="section-label">SERVICIOS</p>
+      <h2>EL ESTILO EMPIEZA<br>CON UNA BUENA DECISIÓN.</h2>
+    </div>
+
+    <div class="services-list">
+      <article class="service-row">
+        <div><h3>CORTE MODERNO</h3><p>30 MIN APROX.</p></div><strong>13€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>CORTE Y CEJAS</h3><p>30 MIN APROX.</p></div><strong>15€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>CORTE Y LAVADO</h3><p>30 MIN APROX.</p></div><strong>16€</strong>
+      </article>
+      <article class="service-row service-row--featured">
+        <div>
+          <h3>CORTE PREMIUM</h3>
+          <p>Mascarilla facial con vaporizador, asesoramiento personal o diseño · 45 MIN APROX.</p>
+        </div>
+        <strong>16€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>CORTE Y BARBA</h3><p>45 MIN APROX.</p></div><strong>18€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>CORTE, BARBA Y CEJAS</h3><p>45 MIN APROX.</p></div><strong>20€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>CORTE, BARBA, CEJAS Y LAVADO</h3><p>60 MIN APROX.</p></div><strong>23€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>CORTE NIÑO O JUBILADO</h3><p>15 MIN APROX.</p></div><strong>8€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>ARREGLO DE BARBA</h3><p>15 MIN APROX.</p></div><strong>8€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>MECHAS</h3><p>INCLUYE CORTE · 150 MIN APROX.</p></div><strong>45€</strong>
+      </article>
+      <article class="service-row">
+        <div><h3>DECOLORACIÓN</h3><p>INCLUYE CORTE · 180 MIN APROX.</p></div><strong>65€</strong>
+      </article>
+    </div>
+
+    <a class="button button--outline"
+      href="https://booksy.com/es-es/124137_nitido-barber-studio_barber-shop_101746_zaragoza" target="_blank"
+      rel="noopener noreferrer">
+      RESERVAR CITA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </section>
+
+  <section id="galeria" class="gallery-section section">
+    <div class="section-heading section-heading--inline">
+      <div>
+        <p class="section-label">GALERÍA</p>
+        <h2>NUESTRO ESPACIO.<br>NUESTRO TRABAJO.</h2>
+      </div>
+      <a class="text-link text-link--dark" href="https://www.instagram.com/nitido.barberstudio" target="_blank"
+        rel="noopener noreferrer">
+        VER MÁS EN INSTAGRAM <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+    <div class="gallery-grid">
+      @for (image of images.slice(0, 7); track image.id; let index = $index) {
+        <figure class="gallery-item gallery-item--{{ index + 1 }}">
+          <img [src]="image.url" [alt]="'Trabajo y espacio de Nítido Barber Studio ' + (index + 1)">
+        </figure>
+      }
+    </div>
+  </section>
+
+  <section id="contacto" class="contact-section">
+    <div class="contact-copy">
+      <p class="section-label">CONTACTO</p>
+      <h2>LEGANÉS</h2>
+      <address>
+        <p><i class="fa-solid fa-location-dot"></i><span>Avenida de la Libertad, 64<br>La Fortuna, 28917</span></p>
+        <p><i class="fa-solid fa-phone"></i><a href="tel:+34694455726">694 45 57 26</a></p>
+        <p><i class="fa-solid fa-envelope"></i><a
+            href="mailto:nitidobarberstudio@gmail.com">nitidobarberstudio&#64;gmail.com</a></p>
+        <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/nitido.barberstudio"
+            target="_blank" rel="noopener noreferrer">&#64;nitido.barberstudio</a></p>
+      </address>
+      <a class="button button--gold"
+        href="https://booksy.com/es-es/124137_nitido-barber-studio_barber-shop_101746_zaragoza" target="_blank"
+        rel="noopener noreferrer">
+        RESERVAR CITA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d760.0873972354575!2d-3.7772825303836846!3d40.35677219821557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189ba3d22ebeb%3A0xe61c8c3e711b75ca!2sNITIDO%20BARBER%20STUDIO!5e0!3m2!1ses-419!2scu!4v1732812518175!5m2!1ses-419!2scu"
+        title="Ubicación de Nítido Barber Studio" loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main>
