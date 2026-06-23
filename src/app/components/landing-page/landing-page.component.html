@@ -28,7 +28,7 @@
     <div class="hero-shade"></div>
     <div class="hero-content">
       <p class="hero-studio">BARBER STUDIO</p>
-      <h1>NÍTIDO</h1>
+      <h1>NITIDO</h1>
       <p class="hero-claim">TU IMAGEN, NUESTRA PASIÓN.</p>
       <p class="hero-copy">En NITIDO cada detalle está pensado para ti. ¡Ven y disfruta de un servicio de calidad donde
         la precisión y el buen gusto se encuentra!</p>
@@ -50,11 +50,10 @@
   <section id="equipo" class="team-section section">
     <div class="section-intro">
       <p class="section-label">EQUIPO</p>
-      <h2>CONOZCA A NUESTROS BARBEROS</h2>
+      <h2>CONOCE A NUESTROS BARBEROS</h2>
       <p>En NITIDO, nos especializamos en resaltar lo mejor de tu estilo con precisión y detalle. Ya sea que busques un
         corte clásico, moderno o algo único, nuestro equipo está listo para ofrecerte un servicio impecable en un
-        ambiente relajado y cómodo. Cada visita a nuestra barbería es una experiencia pensada para ti, porque sabemos
-        que un buen corte no es solo una cuestión de apariencia, es una declaración de personalidad.</p>
+        ambiente relajado y cómodo.</p>
     </div>
 
     <div class="barbers">
@@ -103,7 +102,7 @@
       <article class="service-row">
         <div><h3>CORTE Y LAVADO</h3><p>30 MIN APROX.</p></div><strong>16€</strong>
       </article>
-      <article class="service-row service-row--featured">
+      <article class="service-row">
         <div>
           <h3>CORTE PREMIUM</h3>
           <p>Mascarilla facial con vaporizador, asesoramiento personal o diseño · 45 MIN APROX.</p>
@@ -152,19 +151,21 @@
       </a>
     </div>
 
-    <div class="gallery-grid">
-      @for (image of images.slice(0, 7); track image.id; let index = $index) {
-        <figure class="gallery-item gallery-item--{{ index + 1 }}">
-          <img [src]="image.url" [alt]="'Trabajo y espacio de Nítido Barber Studio ' + (index + 1)">
-        </figure>
-      }
+    <div class="gallery-carousel" aria-label="Galería de trabajos y espacio">
+      <div class="gallery-carousel__track">
+        @for (image of galleryImages; track $index; let index = $index) {
+          <figure class="gallery-item">
+            <img [src]="image.url" [alt]="'Trabajo y espacio de Nítido Barber Studio ' + ((index % images.length) + 1)">
+          </figure>
+        }
+      </div>
     </div>
   </section>
 
   <section id="contacto" class="contact-section">
     <div class="contact-copy">
       <p class="section-label">CONTACTO</p>
-      <h2>LEGANÉS</h2>
+      <!-- <h2>LEGANÉS</h2> -->
       <address>
         <p><i class="fa-solid fa-location-dot"></i><span>Avenida de la Libertad, 64<br>La Fortuna, 28917</span></p>
         <p><i class="fa-solid fa-phone"></i><a href="tel:+34694455726">694 45 57 26</a></p>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -34,6 +34,7 @@ export class LandingPageComponent {
     {id:21, url: 'assets/img/image00021.jpeg', alt: 'Image 21'},
     {id:22, url: 'assets/img/image00022.jpeg', alt: 'Image 22'},
   ];
+  galleryImages = [...this.images, ...this.images];
 
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
